@@ -51,7 +51,7 @@ class Filter extends React.Component{
     const  location=qs.area;
 
     axios({
-        url:'https://apple-tart-77279.herokuapp.com/locations',
+        url:'https://young-depths-27513.herokuapp.com/locations',
         method:'GET',
         headers:{'content-Type':'application/json'}
     }) 
@@ -59,7 +59,7 @@ class Filter extends React.Component{
     .catch(err=>console.log(err))
 
     axios({
-        url:'https://apple-tart-77279.herokuapp.com/filter',
+        url:'https://young-depths-27513.herokuapp.com/filter',
         method:'POST',
         headers:{'content-Type':'application/json'},
         data:{
@@ -79,7 +79,7 @@ class Filter extends React.Component{
   handlesort=(sort)=>{
     const {mealtype, location,lcost,hcost,cuisine,page,locality}=this.state;
     axios({
-        url:'https://apple-tart-77279.herokuapp.com/filter',
+        url:'https://young-depths-27513.herokuapp.com/filter',
         method:'POST',
         headers:{'content-Type':'application/json'},
 
@@ -104,7 +104,7 @@ class Filter extends React.Component{
      
 const {mealtype,location,sort,cuisine,page,locality}=this.state;
 axios({
-    url:'https://apple-tart-77279.herokuapp.com/filter',
+    url:'https://young-depths-27513.herokuapp.com/filter',
     method:'POST',
     headers:{'content-Type':'application/json'},
 
@@ -142,7 +142,7 @@ axios({
     
 
       axios({
-          url:'https://apple-tart-77279.herokuapp.com/filter',
+          url:'https://young-depths-27513.herokuapp.com/filter',
           method:'POST',
           headers:{'content-Type':'application/json'},
           data:{
@@ -168,7 +168,7 @@ axios({
 const {mealtype,location,sort,lcost,hcost,cuisine,locality}=this.state;
 
 axios({
-    url:'https://apple-tart-77279.herokuapp.com/filter',
+    url:'https://young-depths-27513.herokuapp.com/filter',
     method:'POST',
     headers:{'content-Type':'application/json'},
     data:{
@@ -193,7 +193,7 @@ axios({
      
       const {lcost,hcost,sort,page,mealtype,cuisine}=this.state;
       axios({
-          url:'https://apple-tart-77279.herokuapp.com/filter',
+          url:'https://young-depths-27513.herokuapp.com/filter',
           method:'POST',
           headers:{'content-Type':'application/json'},
           data:
