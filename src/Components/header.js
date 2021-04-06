@@ -184,12 +184,13 @@ createaccount =(state,value)=>{
                 firstname:firstname,
                 lastname:lastname,
                 password:password,
-                email:mails[mail]!==email?email:alert('User with this email address already exist'),
+                email:mails[mail]!== email ? email : alert('User with this email address already exist'),
                 gender:gender
             }
         }).then(res=>this.setState({registeredusers:res.data.signup}))
 
         .catch(err=>console.log(err))
+     
     }
 
 
