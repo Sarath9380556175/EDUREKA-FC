@@ -66,7 +66,7 @@ class Details extends React.Component {
         const resId=qs.restaurant;
 
         axios({
-            url:`https://apple-tart-77279.herokuapp.com/getRestaurantById/${resId}`,
+            url:`https://young-depths-27513.herokuapp.com/getRestaurantById/${resId}`,
             method:'GET',
             headers:{'content-Type':'application/json'}
         }) 
@@ -86,7 +86,7 @@ class Details extends React.Component {
       if(state=='isonlineorderopen')
       {
          axios({
-             url:`https://apple-tart-77279.herokuapp.com/getrestauantbyitem/${restaurantId}`,
+             url:`https://young-depths-27513.herokuapp.com/getrestauantbyitem/${restaurantId}`,
              method:'GET',
              headers:{'content-Type':'application/json'}
          })
@@ -206,7 +206,7 @@ this.setState({items:items, subTotal:total})
     }
 
     getData = (data) => {
-        return fetch(`https://apple-tart-77279.herokuapp.com/payment`, {
+        return fetch(`https://young-depths-27513.herokuapp.com/payment`, {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -230,7 +230,7 @@ this.setState({items:items, subTotal:total})
         const {firstname,lastname,password,gender}=this.state;
 
         axios({
-            url:'https://apple-tart-77279.herokuapp.com/signup',
+            url:'https://young-depths-27513.herokuapp.com/signup',
             method:'POST',
             headers:{'content-Type':'application/json'},
             data:
