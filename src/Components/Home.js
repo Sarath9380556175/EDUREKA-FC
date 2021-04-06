@@ -21,7 +21,7 @@ class Home extends React.Component{
     {
         sessionStorage.clear();
         axios({
-            url:'https://apple-tart-77279.herokuapp.com/locations',
+            url:'https://young-depths-27513.herokuapp.com/locations',
             method:'GET',
             headers:{'content-Type':'application/json'}
         }) 
@@ -30,7 +30,7 @@ class Home extends React.Component{
 
 
         axios({
-            url:'https://apple-tart-77279.herokuapp.com/mealtypes',
+            url:'https://young-depths-27513.herokuapp.com/mealtypes',
             method:'GET',
             headers:{'content-Type':'application/json'}
         })
