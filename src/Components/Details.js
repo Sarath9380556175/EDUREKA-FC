@@ -258,7 +258,7 @@ this.setState({items:items, subTotal:total})
                 
                 <div>
                     <img src={`../${restaurant.image}`} alt="No Image, Sorry for the Inconvinience" width="100%" height="350" />
-                    <button className="button mr-3" onClick={()=>this.handleclick('gallerymodalIsOpen', true)}>Click to see Image Gallery</button>
+                    <button className="button mr-3" onClick={()=>this.handleclick('gallerymodalIsOpen', true)}>Image Gallery</button>
                 
                 <div className="heading">{restaurant.name}</div>
                 <button className="btn-order" style={{marginRight:'50px'}} onClick={()=>this.handleclick('isonlineorderopen', true)}>Place Online Order</button>
